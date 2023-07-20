@@ -1,6 +1,6 @@
 {
   "name": "@odayibasi/number-multiplier",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple React component to multiply a number by 2.",
   "main": "NumberMultiplier.js",
   "scripts": {
@@ -9,8 +9,8 @@
   },
   "types": "index.d.ts",
   "files": [
-    "dist",     
-    "index.d.ts"    
+    "dist",
+    "index.d.ts"
   ],
   "keywords": [
     "react",
