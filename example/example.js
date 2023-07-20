@@ -3,4 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import NumberMultiplier from "../NumberMultiplier";
 
-ReactDOM.render(<NumberMultiplier />, document.getElementById("root"));
+ReactDOM.render(
+  <NumberMultiplier multiplier={5} />,
+  document.getElementById("root")
+);

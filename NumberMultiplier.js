@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NumberMultiplier = () => {
+const NumberMultiplier = ({ multiplier = 2 }) => {
   // State to hold the input value and the result of multiplication
   const [number, setNumber] = useState(0);
   const [result, setResult] = useState(0);
@@ -9,7 +9,7 @@ const NumberMultiplier = () => {
   const handleChange = (event) => {
     const inputNumber = parseInt(event.target.value);
     setNumber(inputNumber);
-    setResult(inputNumber * 2);
+    setResult(inputNumber * multiplier);
   };
 
   return (
