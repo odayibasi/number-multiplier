@@ -9,7 +9,8 @@
   },
   "types": "index.d.ts",
   "files": [
-    "NumberMultiplier.js"
+    "dist",     
+    "index.d.ts"    
   ],
   "keywords": [
     "react",
