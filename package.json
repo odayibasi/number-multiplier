@@ -4,7 +4,8 @@
   "description": "A simple React component to multiply a number by 2.",
   "main": "NumberMultiplier.js",
   "scripts": {
-    "example": "webpack && cd example && npx http-server -c-1 --cors"
+    "start": "webpack && cd example && npx http-server -c-1 --cors",
+    "build": "babel src --out-dir dist --presets=@babel/preset-env,@babel/preset-react"
   },
   "types": "index.d.ts",
   "files": [
@@ -22,6 +23,7 @@
     "react-dom": "^16.14.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.22.9",
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
