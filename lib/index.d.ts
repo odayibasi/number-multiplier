@@ -1,12 +1,20 @@
-import React from "react";
+import * as React from "react";
 
-declare module "number-multiplier" {
-  interface NumberMultiplierProps {
-    multiplier?: number;
-    // Add any specific props your component might use
-    // For this example, we don't need any additional props.
-  }
-
-  const NumberMultiplier: React.FC<NumberMultiplierProps>;
-  export default NumberMultiplier;
+declare interface NumberMultiplierProps {
+  multiplier?: number;
 }
+
+declare class NumberMultiplier extends React.Component<NumberMultiplierProps> {
+  constructor(props: NumberMultiplierProps);
+
+  state: {
+    number: number;
+    result: number;
+  };
+
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+
+  render(): React.ReactNode;
+}
+
+export default NumberMultiplier;
