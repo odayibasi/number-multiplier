@@ -17,4 +17,22 @@ declare class NumberMultiplier extends React.Component<NumberMultiplierProps> {
   render(): React.ReactNode;
 }
 
-export default NumberMultiplier;
+//===================================================
+declare interface NumberDividerProps {
+  divider?: number;
+}
+
+declare class NumberDivider extends React.Component<NumberDividerProps> {
+  constructor(props: NumberDividerProps);
+
+  state: {
+    number: number;
+    result: number;
+  };
+
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+
+  render(): React.ReactNode;
+}
+
+export { NumberMultiplier, NumberDivider };
